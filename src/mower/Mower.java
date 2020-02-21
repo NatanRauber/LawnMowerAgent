@@ -27,7 +27,7 @@ public class Mower {
 
         for (i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
-                lawn[i][i2] = ".";
+                lawn[i][i2] = "";
             }
         }
 
@@ -64,11 +64,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i][i2 + 1] == "w") || (lawn[i][i2 + 1] == "_")) {
+                    if ((lawn[i][i2 + 1] == "w") || (lawn[i][i2 + 1] == ".")) {
                         if (lawn[i][i2 + 1] == "w")
                             alreadyCut++;
                         lawn[i][i2 + 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -84,11 +84,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i][i2 - 1] == "w") || (lawn[i][i2 - 1] == "_")) {
+                    if ((lawn[i][i2 - 1] == "w") || (lawn[i][i2 - 1] == ".")) {
                         if (lawn[i][i2 - 1] == "w")
                             alreadyCut++;
                         lawn[i][i2 - 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -104,11 +104,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i - 1][i2] == "w") || (lawn[i - 1][i2] == "_")) {
+                    if ((lawn[i - 1][i2] == "w") || (lawn[i - 1][i2] == ".")) {
                         if (lawn[i - 1][i2] == "w")
                             alreadyCut++;
                         lawn[i - 1][i2] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -124,11 +124,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i + 1][i2] == "w") || (lawn[i + 1][i2] == "_")) {
+                    if ((lawn[i + 1][i2] == "w") || (lawn[i + 1][i2] == ".")) {
                         if (lawn[i + 1][i2] == "w")
                             alreadyCut++;
                         lawn[i + 1][i2] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -144,11 +144,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i - 1][i2 + 1] == "w") || (lawn[i - 1][i2 + 1] == "_")) {
+                    if ((lawn[i - 1][i2 + 1] == "w") || (lawn[i - 1][i2 + 1] == ".")) {
                         if (lawn[i - 1][i2 + 1] == "w")
                             alreadyCut++;
                         lawn[i - 1][i2 + 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -164,11 +164,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i + 1][i2 + 1] == "w") || (lawn[i + 1][i2 + 1] == "_")) {
+                    if ((lawn[i + 1][i2 + 1] == "w") || (lawn[i + 1][i2 + 1] == ".")) {
                         if (lawn[i + 1][i2 + 1] == "w")
                             alreadyCut++;
                         lawn[i + 1][i2 + 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -184,11 +184,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i - 1][i2 - 1] == "w") || (lawn[i - 1][i2 - 1] == "_")) {
+                    if ((lawn[i - 1][i2 - 1] == "w") || (lawn[i - 1][i2 - 1] == ".")) {
                         if (lawn[i - 1][i2 - 1] == "w")
                             alreadyCut++;
                         lawn[i - 1][i2 - 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {
@@ -204,11 +204,11 @@ public class Mower {
         for (int i = 0; i < size; i++) {
             for (int i2 = 0; i2 < size; i2++) {
                 if (lawn[i][i2] == "C") {
-                    if ((lawn[i + 1][i2 - 1] == "w") || (lawn[i + 1][i2 - 1] == "_")) {
+                    if ((lawn[i + 1][i2 - 1] == "w") || (lawn[i + 1][i2 - 1] == ".")) {
                         if (lawn[i + 1][i2 - 1] == "w")
                             alreadyCut++;
                         lawn[i + 1][i2 - 1] = "C";
-                        lawn[i][i2] = "_";
+                        lawn[i][i2] = ".";
                         print();
                         return true;
                     } else {

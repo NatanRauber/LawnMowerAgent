@@ -9,6 +9,7 @@ public class RandomMower extends Mower {
         float a = size;
         float b = ant;
         float c = (b / ((a - 2) * (a - 2)));
+
         if (c > 0.30) {
             System.out.printf("Muitos formigueiros\n");
             System.out.printf("Numero maximo: 30,0 %%\n");
@@ -45,6 +46,8 @@ public class RandomMower extends Mower {
         do {
             for (int i = 1; i < size - 1; i++) {
                 for (int i2 = 1; i2 < size - 1; i2++) {
+                    if (alreadyCut >= totalGrass)
+                        return;
                     if (lawn[i][i2] == "C") {
                         if (diagonal == true) {
                             x = rand.nextInt(8);
