@@ -11,9 +11,9 @@ public class RandomMower extends Mower {
         float c = (b / ((a - 2) * (a - 2)));
 
         if (c > 0.30) {
-            System.out.printf("Muitos formigueiros\n");
-            System.out.printf("Numero maximo: 30,0 %%\n");
-            System.out.printf("Numero atual: %.1f %%\n", (c * 100));
+            System.out.printf("Too many ants\n");
+            System.out.printf("Maximum: 30,0 %%\n");
+            System.out.printf("Currently: %.1f %%\n", (c * 100));
             System.exit(0);
         } else {
             this.size = size;
@@ -69,19 +69,35 @@ public class RandomMower extends Mower {
                                 leftUp();
                             } else if (x == 0) {
                                 right();
+                                right();
+                                right();
                             } else if (x == 1) {
+                                left();
+                                left();
                                 left();
                             } else if (x == 2) {
                                 up();
+                                up();
+                                up();
                             } else if (x == 3) {
+                                down();
+                                down();
                                 down();
                             } else if (x == 4) {
                                 rightUp();
+                                rightUp();
+                                rightUp();
                             } else if (x == 5) {
+                                rightDown();
+                                rightDown();
                                 rightDown();
                             } else if (x == 6) {
                                 leftUp();
+                                leftUp();
+                                leftUp();
                             } else if (x == 7) {
+                                leftDown();
+                                leftDown();
                                 leftDown();
                             }
                         }
@@ -113,11 +129,19 @@ public class RandomMower extends Mower {
                                 up();
                             } else if (x == 0) {
                                 right();
+                                right();
+                                right();
                             } else if (x == 1) {
+                                left();
+                                left();
                                 left();
                             } else if (x == 2) {
                                 up();
+                                up();
+                                up();
                             } else if (x == 3) {
+                                down();
+                                down();
                                 down();
                             }
                         }
