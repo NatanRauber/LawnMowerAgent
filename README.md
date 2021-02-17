@@ -1,4 +1,3 @@
 # LawnMowerAgent
 
-### Just a University Homework
-### Lawn mower agent made using Java
+- Random lawn mower agent made using Java
